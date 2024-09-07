@@ -1,16 +1,18 @@
 /* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
+    background-image: url("bg.avif");
     margin: 0;
     padding: 0;
     background-color: #6e6d6d;
     overflow-x: hidden;
 }
 
-h1, h2 {
+h1 {
     text-align: center;
-    color: #333;
+    color: #ffffff;
     opacity: 0;
+    font-size: 48px;
     transform: translateY(-30px);
     animation: slideIn 1s forwards;
 }
@@ -18,7 +20,10 @@ h1, h2 {
 h2 {
     opacity: 0;
     transform: translateY(-30px);
-    animation: fadeIn 1s forwards;
+    animation: fadeIn 1s forwards, slideIn 1s forwards;
+    text-align: center;
+    color: #333;
+    font-size: 36px;
 }
 
 p {
@@ -75,6 +80,7 @@ p {
 
 header {
     background-color: #333;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("header.avif");
     color: #fff;
     padding: 10px 0;
     text-align: center;
